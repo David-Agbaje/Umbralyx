@@ -73,7 +73,7 @@ function deleteTask(id) {
   } else {
     console.log(" Task not found!");
   }
-}
+} 
 
 
 
