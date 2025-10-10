@@ -2,6 +2,7 @@
   --main-bg: #121214;
   --color-text-primary: #E8E8EB;
   --color-text-muted: #A0A0AA;
+  --color-text-muted2: #C0C0CA;
   --sidebar-bg: #0A0A0C;
   --siderbar-width: 260px;
   
@@ -55,11 +56,19 @@ body{
    border: none;
    font-size: 1rem;
    background-color: var(--sidebar-bg);
-   color: var(--color-text-primary);
+   color: var(--color-text-muted2);
    display: flex;
    justify-content: center;
    gap: 3px;
    text-align: center;
+   cursor: pointer;
+   transition: ease all 0.4s;
+}
+
+.elements:hover{
+  transform: translateY(-4px);
+  box-shadow: 0 0 15px rgba(192, 192, 192, 0.8);
+  border-radius: 8px;
 }
 
 .create-btn{
@@ -70,6 +79,12 @@ body{
   display: flex;
   justify-content: center;
   gap: 3px;
+  cursor: pointer;
+  transition: ease all 0.5s;
+}
+
+.create-btn:hover{
+  transform: translateX(-8px);
 }
 
 .utility-btn{
@@ -83,6 +98,7 @@ body{
   justify-content: center;
   gap: 4px;
   margin-left: 10px;
+  cursor: pointer;
 }
 
 .top-bar{
@@ -101,4 +117,41 @@ body{
   background-color: var(--main-bg);
   padding: 12px;
   color: var(--color-text-primary)
+}
+
+.search-tasks:focus{
+  outline: none;
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.img{
+  height: 350px;
+  width: 350px;
+  object-fit: cover;
+  margin-bottom: -20px;
+  box-shadow: rgba(255, 255, 255, 0.6);
+}
+
+.create-main-btn{
+  background-color: #1E6BFF;
+  border: none;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: -4px;
+  border-radius: 10px;
+  height: 35px;
+  width: 140px;
+  color: #FFFFFF;
+  font-size: 13px;
+  font-weight: bold;
+  padding: 4px;
 }
